@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#210e18" />
+  <meta name="description" content="A special invitation to celebrate the wedding of Tanishka and Yash." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tanishka & Yash — The Wedding" />
+  <meta property="og:description" content="Some stories are meant to be celebrated. You're invited." />
+  <title>Tanishka & Yash | A Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-locked">
+  <div class="grain" aria-hidden="true"></div>
+  <div id="pageProgress" class="page-progress" aria-hidden="true"></div>
+
+  <!-- OPENING SCENE / interactive envelope-like gate -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-veil gate-veil-left" aria-hidden="true"></div>
+    <div class="gate-veil gate-veil-right" aria-hidden="true"></div>
+    <div class="gate-ornament gate-ornament-tl" aria-hidden="true"></div>
+    <div class="gate-ornament gate-ornament-br" aria-hidden="true"></div>
+    <div class="gate-frame">
+      <div class="gate-mark"><span class="gate-initial">T</span><span class="gate-amp">&</span><span class="gate-initial">Y</span></div>
+      <div class="gate-rule"></div>
+      <p class="eyebrow gate-label">a personal invitation</p>
+      <h1 id="gateTitle" class="gate-title">For a love worth<br><em>celebrating.</em></h1>
+      <p class="gate-note">You are invited to a beautiful beginning.</p>
+      <button class="unseal-button" id="openInvitation" type="button"><span class="unseal-diamond">✦</span><span>Open the invitation</span><span aria-hidden="true" class="unseal-arrow">↗</span></button>
+      <div class="gate-foot">TANISHKA <span>✳</span> YASH</div>
+    </div>
+    <span class="gate-corner gate-corner-a" aria-hidden="true">✧</span><span class="gate-corner gate-corner-b" aria-hidden="true">✧</span>
+  </div>
+
+  <header class="nav" id="nav" inert>
+    <a href="#beginning" class="nav-monogram" aria-label="Tanishka and Yash, go to beginning">T<span>&</span>Y</a>
+    <span class="nav-center">THE WEDDING OF TANISHKA & YASH</span>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Turn soundtrack on" aria-pressed="false">
+      <span class="sound-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span id="soundLabel">SOUND OFF</span>
+    </button>
+  </header>
+
+  <main id="mainContent" inert>
+    <!-- Scene 01 — the opening film -->
+    <section class="hero scene" id="beginning" aria-labelledby="heroTitle">
+      <div class="film-background">
+        <video id="heroVideo" class="film-video" autoplay muted loop playsinline preload="auto" poster="assets/cinematic-poster.jpg" aria-hidden="true">
+          <source src="assets/cinematic-loop.mp4" type="video/mp4" />
+        </video>
+        <div class="film-wash"></div>
+      </div>
+      <div class="hero-columns" aria-hidden="true"><div class="column-line c1"></div><div class="column-line c2"></div></div>
+      <div class="hero-flourish hero-flourish-left" aria-hidden="true">✧</div>
+      <div class="hero-flourish hero-flourish-right" aria-hidden="true">✧</div>
+      <div class="hero-content">
+        <div class="hero-stars" aria-hidden="true">✦ <span>✧</span> ✦</div>
+        <p class="eyebrow hero-kicker">TOGETHER WITH OUR FAMILIES</p>
+        <p class="hero-invite">joyfully invite you to celebrate the wedding of</p>
+        <h2 id="heroTitle" class="hero-names"><span class="name name-one">Tanishka</span><span class="name-join">&</span><span class="name name-two">Yash</span></h2>
+        <div class="hero-ornament" aria-hidden="true"><span></span><b>❈</b><span></span></div>
+        <p class="hero-tagline">Two hearts. One beautiful beginning.</p>
+      </div>
+      <a class="scroll-note" href="#chapter-one"><span class="scroll-stem"></span><span>SCROLL TO UNFOLD OUR STORY</span></a>
+      <p class="hero-side hero-side-left">A CELEBRATION OF LOVE</p>
+      <p class="hero-side hero-side-right">A NEW CHAPTER BEGINS</p>
+    </section>
+
+    <!-- Scene 02 — archival/editorial chapter -->
+    <section class="chapter chapter-one" id="chapter-one" aria-labelledby="chapterTitle">
+      <div class="chapter-index reveal"><span class="index-rule"></span>CHAPTER I <span class="small-star">✳</span> THE PROMISE</div>
+      <div class="chapter-layout">
+        <div class="chapter-copy">
+          <span class="tiny-overline reveal">THE BEAUTY OF TOGETHERNESS</span>
+          <h2 id="chapterTitle" class="chapter-title reveal">Of all the<br>beautiful things<br>in life, <em>love</em><br>is the loveliest.</h2>
+          <div class="chapter-small-rule reveal"></div>
+          <p class="chapter-description reveal">A day for two hearts, two families, and all the people whose love has brought us here. A day to treasure, together.</p>
+        </div>
+        <div class="chapter-art reveal" aria-label="Decorative illustrated golden arches and blossoming flowers">
+          <div class="art-shape art-outer"></div><div class="art-shape art-inner"></div>
+          <div class="arch-center">
+            <div class="arch-sun"></div>
+            <div class="arch-horizon"></div>
+            <svg class="arch-palace" viewBox="0 0 440 280" role="img" aria-label="Illustration of Indian palace domes under the setting sun">
+              <defs><linearGradient id="palaceGold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b99971"/><stop offset="1" stop-color="#6b3c38"/></linearGradient></defs>
+              <path d="M0 234H440V280H0Z" fill="#714644"/>
+              <path d="M30 222H410V269H30Z" fill="url(#palaceGold)"/>
+              <path d="M68 158H372V238H68Z" fill="#996a5a"/>
+              <path d="M102 124H338V235H102Z" fill="#b78769"/>
+              <path d="M137 142V105Q220 32 303 105V142Z" fill="#bb9274" />
+              <path d="M144 101Q220 35 296 101" fill="none" stroke="#e9c595" stroke-width="3"/>
+              <rect x="216" y="36" width="8" height="32" fill="#c5a17a"/>
+              <circle cx="220" cy="32" r="9" fill="#ddc49d"/>
+              <path d="M31 169H96V236H31Z M344 169H409V236H344Z" fill="#aa8069"/>
+              <path d="M41 167Q63 111 86 167 M354 167Q377 111 399 167" fill="#c39b7a" stroke="#e8c495" stroke-width="2"/>
+              <path d="M55 115V142M382 115V142" stroke="#e5be8a" stroke-width="3"/>
+              <path d="M194 238V182Q220 153 246 182V238Z" fill="#5c3037"/>
+              <path d="M202 238V189Q220 168 238 189V238Z" fill="#422630"/>
+              <g fill="#633641"><path d="M123 170Q139 152 155 170V205H123Z M163 170Q179 152 195 170V205H163Z M245 170Q261 152 277 170V205H245Z M285 170Q301 152 317 170V205H285Z"/></g>
+              <g stroke="#e8c699" stroke-opacity=".45"><path d="M74 213H366 M103 142H337 M40 187H96 M344 187H402"/></g>
+            </svg>
+            <span class="arch-note">a beautiful beginning</span>
+          </div>
+          <svg class="flower flower-left" viewBox="0 0 165 300" aria-hidden="true"><path d="M142 300Q26 210 85 46" stroke="#947b51" stroke-width="2" fill="none"/><path d="M71 198Q8 154 3 170Q35 201 71 198M76 166Q130 121 136 137Q100 167 76 166M81 124Q40 99 18 114Q50 133 81 124M99 80Q140 51 148 71Q118 87 99 80" fill="#a29a62"/><g fill="#d3a5a5" stroke="#bb7a7e" stroke-width="1"><ellipse cx="86" cy="40" rx="17" ry="28" transform="rotate(20 86 40)"/><ellipse cx="70" cy="44" rx="13" ry="23" transform="rotate(-38 70 44)"/><ellipse cx="96" cy="50" rx="13" ry="21" transform="rotate(55 96 50)"/><ellipse cx="76" cy="56" rx="12" ry="18"/><circle cx="85" cy="49" r="9" fill="#e5c7b6"/></g><circle cx="85" cy="49" r="4" fill="#b28b53"/></svg>
+          <svg class="flower flower-right" viewBox="0 0 165 300" aria-hidden="true"><path d="M142 300Q26 210 85 46" stroke="#947b51" stroke-width="2" fill="none"/><path d="M71 198Q8 154 3 170Q35 201 71 198M76 166Q130 121 136 137Q100 167 76 166M81 124Q40 99 18 114Q50 133 81 124M99 80Q140 51 148 71Q118 87 99 80" fill="#a29a62"/><g fill="#d3a5a5" stroke="#bb7a7e" stroke-width="1"><ellipse cx="86" cy="40" rx="17" ry="28" transform="rotate(20 86 40)"/><ellipse cx="70" cy="44" rx="13" ry="23" transform="rotate(-38 70 44)"/><ellipse cx="96" cy="50" rx="13" ry="21" transform="rotate(55 96 50)"/><ellipse cx="76" cy="56" rx="12" ry="18"/><circle cx="85" cy="49" r="9" fill="#e5c7b6"/></g><circle cx="85" cy="49" r="4" fill="#b28b53"/></svg>
+          <span class="art-footnote">FIG. 01 — THE BEGINNING OF FOREVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 03 — film interlude -->
+    <section class="interlude scene" id="chapter-two" aria-labelledby="interludeTitle">
+      <div class="interlude-glow"></div>
+      <div class="interlude-circles" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="interlude-content reveal">
+        <div class="star-field" aria-hidden="true">✧ &nbsp;&nbsp; ✦ &nbsp;&nbsp; ✧</div>
+        <p class="eyebrow">AND SO THE STORY CONTINUES</p>
+        <h2 id="interludeTitle">Not just a day.<br><em>A lifetime.</em></h2>
+        <p>Of laughter, little moments, shared dreams<br>and a thousand ordinary miracles.</p>
+        <span class="interlude-ornament" aria-hidden="true">✺</span>
+      </div>
+      <div class="interlude-bottom">T <span class="small-star">✳</span> Y</div>
+    </section>
+
+    <!-- Scene 04 — invitation/details -->
+    <section class="details" id="celebration" aria-labelledby="detailsTitle">
+      <div class="details-topline"><span>CHAPTER II / THE CELEBRATION</span><span>WITH LOVE & BLESSINGS</span></div>
+      <div class="details-card reveal">
+        <div class="details-corners" aria-hidden="true"></div>
+        <div class="card-crest" aria-hidden="true">❦</div>
+        <p class="eyebrow details-eyebrow">WITH THE BLESSINGS OF OUR FAMILIES</p>
+        <h2 id="detailsTitle">We would be <em>honoured</em><br>to celebrate with you.</h2>
+        <p class="details-intro">As we begin this wonderful journey together,<br class="desktop-only"> your presence will make our celebration even more meaningful.</p>
+        <div class="details-separator" aria-hidden="true"><span></span><b>✧</b><span></span></div>
+        <div class="event-info" aria-label="Celebration information">
+          <div class="event-field"><span class="eyebrow">THE DATE</span><span class="event-value" id="dateValue">To be announced</span></div>
+          <span class="event-flower" aria-hidden="true">❈</span>
+          <div class="event-field"><span class="eyebrow">THE VENUE</span><span class="event-value" id="venueValue">To be announced</span></div>
+        </div>
+        <p class="details-fine">More celebration details will be shared soon.</p>
+        <svg class="card-bottom-flower" viewBox="0 0 270 90" aria-hidden="true"><g fill="none" stroke="#a78a5b" stroke-width="1.1"><path d="M20 62Q85 12 135 45Q185 12 250 62"/><path d="M85 36Q55 15 45 27Q58 44 85 36M185 36Q215 15 225 27Q212 44 185 36"/></g><g fill="#b9a079"><ellipse cx="135" cy="45" rx="7" ry="12"/><ellipse cx="122" cy="45" rx="12" ry="6"/><ellipse cx="148" cy="45" rx="12" ry="6"/><ellipse cx="135" cy="33" rx="6" ry="11"/><ellipse cx="135" cy="57" rx="6" ry="11"/></g></svg>
+      </div>
+    </section>
+
+    <!-- Scene 05 — a closing note -->
+    <footer class="closing" id="with-love">
+      <div class="closing-bg"><video autoplay muted loop playsinline preload="none" poster="assets/cinematic-poster.jpg" aria-hidden="true"><source src="assets/cinematic-loop.mp4" type="video/mp4"></video></div>
+      <div class="closing-content reveal">
+        <span class="eyebrow">UNTIL WE MEET TO CELEBRATE</span>
+        <h2>With all our <em>love.</em></h2>
+        <p>We can't wait to share this beautiful chapter with you.</p>
+        <div class="closing-names">Tanishka <span>&</span> Yash</div>
+        <button type="button" class="share-button" id="shareInvitation"><span>SHARE THIS INVITATION</span><span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="footer-baseline"><span>MADE TO BE REMEMBERED</span><span>© TANISHKA & YASH</span></div>
+    </footer>
+  </main>
+  <audio id="score" loop preload="auto" src="assets/ambient-score.mp3"></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
